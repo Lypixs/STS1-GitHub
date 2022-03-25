@@ -1,7 +1,7 @@
 //Fonctions réalisées par l'étudiant 1 :
 bool estMajeur(int age)
 {
-	if (age <= 18)
+	if (age >= 18)
 	{
 		return true;
 	}
@@ -84,6 +84,8 @@ float salaireNet(int salaire)
 	float salaireNet;
 	
 	salaireNet = salaire - (salaire*0.23)	
+	
+	return salaireNet;
 	
 }
 
