@@ -9,7 +9,6 @@ bool estMajeur(int age)
 	{
 		return false;
 	}
-	
 }
 
 
@@ -41,15 +40,14 @@ int plusGrand(int a, int b, int c)
 	{
 		return a;
 	}
-	else if (b >= a && b >=c)
+	else if (b >= a && b >= c)
 	{
 		return b;
 	}
 	else 
 	{
 		return c;
-	}
-	
+	}	
 }
 
 
@@ -65,33 +63,45 @@ bool estPair(int nb)
 	else 
 	{
 		return false;
-	}
-	
+	}	
 }
 
-/*int sommeNombre(int nb)
+int sommeNombre(int nb)
 {
 	int somme;
 	
-	somme = nb!;
+	for(int i = nb; i > 0; i--)
+	{
+		somme += i;		
+	}
 	
 	return somme;
 	
-}*/
+}
 
 float salaireNet(int salaire)
 {
+	float salaireNet;
 	
+	salaireNet = salaire - (salaire*0.23)	
 	
 }
 
-
-
-
-
-
-
-
+int plusPetit(int a, int b, int c)
+{
+	if(a <= b && a <= c)
+	{
+		return a
+	}
+	else if (b <= a && b <= c)
+	{
+		return b
+	}
+	else
+	}
+		return c
+	}
+}
 
 //Fonctions réalisées par l'étudiant 3 :
 
@@ -101,8 +111,8 @@ bool estImpair(int nb)
 	{
 		return true;
 	}
-	else 
-	{
+	else
+	{ 
 		return false;
 	}
 }
@@ -121,7 +131,7 @@ float reduction(int prix, int reduc)
 {
 	
 	float resultat;
-	
+
 	resultat = prix - (prix*(reduc/100));
 	
 	return resultat;
@@ -133,6 +143,13 @@ int nombreMedian(int a, int b, int c)
 	if (( a <= b && a >= c) || ( a >= b && a <= c))
 	{
 		return a;
+	}	
+	else if (( b <= a && b >= c) || ( b >= a && b <= c))
+	{
+		return b;
 	}
-	
+	else
+	{
+		return c;
+	}		
 }
